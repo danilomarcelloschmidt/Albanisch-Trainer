@@ -1,462 +1,461 @@
 const TOPICS = [
   {
     "id": 1,
-    "title": "Präsens regelmäßiger Verben auf -oj",
-    "focus": "Formen von unë, ti, ai/ajo, ne, ju, ata/ato",
+    "title": "Präsens regelmäßiger Verben I: -oj-Verben",
+    "focus": "Konjugation und Alltagssätze mit häufigen Verben",
     "examples": "punoj, mësoj, kuptoj, shpjegoj"
   },
   {
     "id": 2,
-    "title": "Präsens wichtiger unregelmäßiger Verben",
-    "focus": "jam, kam, vij, shkoj, ha, pi, di, dua",
-    "examples": "Unë jam… / Ne shkojmë…"
+    "title": "Präsens regelmäßiger Verben II: weitere häufige Muster",
+    "focus": "Verben wie shkoj, dëgjoj, lexoj, shkruaj, jetoj, banoj",
+    "examples": "shkoj, shkon, shkojmë"
   },
   {
     "id": 3,
-    "title": "Einfacher Hauptsatz",
-    "focus": "Aussage, Frage, Verneinung",
-    "examples": "Unë nuk shkoj sot."
+    "title": "Präsens häufiger einsilbiger Verben",
+    "focus": "kurze Verben mit eigenen Mustern",
+    "examples": "ha, pi, di, fle, rri"
   },
   {
     "id": 4,
-    "title": "Fragewörter",
-    "focus": "kush, ku, kur, si, çfarë, sa, pse",
-    "examples": "Ku është dyqani?"
+    "title": "Präsens: jam und kam",
+    "focus": "sein/haben in Alltagssätzen",
+    "examples": "jam në shtëpi, kam kohë"
   },
   {
     "id": 5,
-    "title": "Akkusativ Singular bestimmter Nomen",
-    "focus": "Objektformen im Singular",
-    "examples": "familja → familjen, gruaja → gruan"
+    "title": "Präsens: dua, mund, duhet, më duhet",
+    "focus": "wollen, können, müssen, brauchen",
+    "examples": "dua të shkoj, më duhet ndihmë"
   },
   {
     "id": 6,
-    "title": "Akkusativ Plural bestimmter Nomen",
-    "focus": "Objektformen im Plural",
-    "examples": "vajzat, djemtë, fëmijët"
+    "title": "Präsens: Verben mit Stammwechsel / schwierigen Formen I",
+    "focus": "wichtige häufige Verben aktiv üben",
+    "examples": "them, jap, marr, dal"
   },
   {
     "id": 7,
-    "title": "Nominativ vs. Akkusativ",
-    "focus": "Subjektform vs. Objektform",
-    "examples": "Gruaja punon. / Shoh gruan."
+    "title": "Präsens: Verben mit Stammwechsel / schwierigen Formen II",
+    "focus": "weitere wichtige Verben",
+    "examples": "shoh, vij, gjej, bëj"
   },
   {
     "id": 8,
-    "title": "Präpositionen mit Akkusativ",
-    "focus": "besonders me, në, për, te",
-    "examples": "me gruan, në qytet"
+    "title": "Präsens-Wiederholung gemischt",
+    "focus": "regelmäßige + schwierige Verben kontrastieren",
+    "examples": "Unë vij, ne vijmë / unë bëj, ne bëjmë"
   },
   {
     "id": 9,
-    "title": "Possessivpronomen Singular: mein/dein",
-    "focus": "maskulin + feminin, Nom./Akk./Gen.",
-    "examples": "burri im, gruaja ime, gruan time, gruas sime"
+    "title": "Satzbau mit Zeitangaben",
+    "focus": "Position von sot, nesër, në mëngjes, shpesh",
+    "examples": "Sot punoj. Në mëngjes pi kafe."
   },
   {
     "id": 10,
-    "title": "Possessivpronomen Singular: sein/ihr",
-    "focus": "i tij/e tij, i saj/e saj",
-    "examples": "babai i saj, gruaja e tij"
+    "title": "Satzbau mit Ortsangaben",
+    "focus": "në, te, këtu, atje, afër, larg",
+    "examples": "Shkoj në qytet. Jam te mjeku."
   },
   {
     "id": 11,
-    "title": "Possessivpronomen Singular: unser/euer/ihr",
+    "title": "Satzbau mit mehreren Ergänzungen",
+    "focus": "Wer macht was wann/wo/mit wem?",
+    "examples": "Sot shkoj në treg me gruan time."
+  },
+  {
+    "id": 12,
+    "title": "Verneinung mit nuk",
+    "focus": "Negation in Präsenssätzen",
+    "examples": "Nuk kuptoj gjithçka."
+  },
+  {
+    "id": 13,
+    "title": "Ja/Nein-Fragen mit a",
+    "focus": "einfache Entscheidungsfragen",
+    "examples": "A kupton shqip?"
+  },
+  {
+    "id": 14,
+    "title": "Fragewörter I",
+    "focus": "kush, ku, kur, si",
+    "examples": "Ku është dyqani?"
+  },
+  {
+    "id": 15,
+    "title": "Fragewörter II",
+    "focus": "çfarë, sa, pse, cili/cila",
+    "examples": "Çfarë dëshironi? Sa kushton?"
+  },
+  {
+    "id": 16,
+    "title": "Akkusativ Singular I: feminine Nomen",
+    "focus": "bestimmte feminine Objektformen",
+    "examples": "gruaja → gruan, familja → familjen"
+  },
+  {
+    "id": 17,
+    "title": "Akkusativ Singular II: maskuline Nomen",
+    "focus": "bestimmte maskuline Objektformen",
+    "examples": "dyqani → dyqanin, miku → mikun"
+  },
+  {
+    "id": 18,
+    "title": "Akkusativ Plural",
+    "focus": "Pluralobjekte sicher verwenden",
+    "examples": "vajzat, djemtë, fëmijët"
+  },
+  {
+    "id": 19,
+    "title": "Nominativ vs. Akkusativ",
+    "focus": "Subjekt und Objekt unterscheiden",
+    "examples": "Gruaja punon. Shoh gruan."
+  },
+  {
+    "id": 20,
+    "title": "Präposition me + Objektform",
+    "focus": "mit wem/was?",
+    "examples": "me gruan, me mikun, me familjen"
+  },
+  {
+    "id": 21,
+    "title": "Präpositionen në, te, për",
+    "focus": "Alltagspräpositionen mit Nomen",
+    "examples": "në dyqan, te mjeku, për punë"
+  },
+  {
+    "id": 22,
+    "title": "Präpositionen der Richtung und Lage",
+    "focus": "Wegbeschreibung",
+    "examples": "djathtas, majtas, drejt, përballë, prapa"
+  },
+  {
+    "id": 23,
+    "title": "Possessivpronomen Singular I: mein/dein, Nominativ",
+    "focus": "Grundformen",
+    "examples": "burri im, gruaja ime, burri yt, gruaja jote"
+  },
+  {
+    "id": 24,
+    "title": "Possessivpronomen Singular II: mein/dein, Akkusativ",
+    "focus": "Objektformen",
+    "examples": "burrin tim, gruan time, burrin tënd, gruan tënde"
+  },
+  {
+    "id": 25,
+    "title": "Possessivpronomen Singular III: mein/dein, Genitiv/Dativ/Ablativ",
+    "focus": "tiefere Fallformen",
+    "examples": "gruas sime, burrit tim, gruas sate"
+  },
+  {
+    "id": 26,
+    "title": "Possessivpronomen Singular IV: sein/ihr",
+    "focus": "Formen von i tij/e tij, i saj/e saj",
+    "examples": "babai i saj, gruaja e tij"
+  },
+  {
+    "id": 27,
+    "title": "Possessivpronomen Singular V: unser/euer/ihr",
     "focus": "ynë/jonë, juaj, tyre",
     "examples": "familja jonë, shtëpia juaj"
   },
   {
-    "id": 12,
-    "title": "Possessivpronomen Plural: mein/dein",
-    "focus": "Pluralformen getrennt üben",
-    "examples": "djemtë e mi, vajzat e mia"
-  },
-  {
-    "id": 13,
-    "title": "Possessivpronomen Plural: sein/ihr/unser/euer/ihr",
-    "focus": "Pluralbesitzformen",
-    "examples": "djemtë e saj, vajzat tona, prindërit e tyre"
-  },
-  {
-    "id": 14,
-    "title": "Possessivpronomen in Genitiv/Dativ/Ablativ",
-    "focus": "Besitz + Fall kombinieren",
-    "examples": "familja e gruas sime, prej familjes sime"
-  },
-  {
-    "id": 15,
-    "title": "Genitiv Singular maskulin",
-    "focus": "Besitz/Zuordnung mit maskulinen Nomen",
-    "examples": "libri i mikut, babai i djalit"
-  },
-  {
-    "id": 16,
-    "title": "Genitiv Singular feminin",
-    "focus": "Besitz/Zuordnung mit femininen Nomen",
-    "examples": "shtëpia e nënës, familja e gruas"
-  },
-  {
-    "id": 17,
-    "title": "Genitiv Plural",
-    "focus": "Besitz/Zuordnung im Plural",
-    "examples": "shtëpia e prindërve, çantat e fëmijëve"
-  },
-  {
-    "id": 18,
-    "title": "Genitiv mit Possessivformen",
-    "focus": "Genitiv + mein/dein/sein/ihr",
-    "examples": "babai i gruas sime"
-  },
-  {
-    "id": 19,
-    "title": "Dativ Singular",
-    "focus": "Wem? mit Singularnomen",
-    "examples": "i jap mikut, i ndihmoj gruas"
-  },
-  {
-    "id": 20,
-    "title": "Dativ Plural",
-    "focus": "Wem? mit Pluralnomen",
-    "examples": "u flas prindërve, u jap fëmijëve"
-  },
-  {
-    "id": 21,
-    "title": "Ablativ Singular",
-    "focus": "Herkunft/Trennung mit Singular",
-    "examples": "prej mikut, nga qyteti"
-  },
-  {
-    "id": 22,
-    "title": "Ablativ Plural und Präpositionen",
-    "focus": "Herkunft/Trennung im Plural",
-    "examples": "prej prindërve, nga vendet"
-  },
-  {
-    "id": 23,
-    "title": "me vs. më",
-    "focus": "me = mit, më = mich/mir",
-    "examples": "me gruan, më ndihmon"
-  },
-  {
-    "id": 24,
-    "title": "Akkusativ-Kurzpronomen Singular",
-    "focus": "më, të, e",
-    "examples": "Ai më njeh. Unë e shoh atë."
-  },
-  {
-    "id": 25,
-    "title": "Akkusativ-Kurzpronomen Plural",
-    "focus": "na, ju, i",
-    "examples": "Ata na shohin. Unë i njoh."
-  },
-  {
-    "id": 26,
-    "title": "Dativ-Kurzpronomen Singular",
-    "focus": "më, të, i",
-    "examples": "Ai më jep librin. I flas asaj."
-  },
-  {
-    "id": 27,
-    "title": "Dativ-Kurzpronomen Plural",
-    "focus": "na, ju, u",
-    "examples": "U flas fëmijëve."
-  },
-  {
     "id": 28,
-    "title": "Doppelmarkierung Akkusativ",
-    "focus": "bestimmtes Objekt + Kurzpronomen",
-    "examples": "E njoh atë. E takoj vajzën."
+    "title": "Possessivpronomen Plural I: mein/dein",
+    "focus": "Pluralformen",
+    "examples": "djemtë e mi, vajzat e mia, djemtë e tu"
   },
   {
     "id": 29,
-    "title": "Doppelmarkierung Dativ",
+    "title": "Possessivpronomen Plural II: sein/ihr",
+    "focus": "Plural mit tij/saj",
+    "examples": "prindërit e saj, fëmijët e tij"
+  },
+  {
+    "id": 30,
+    "title": "Possessivpronomen Plural III: unser/euer/ihr",
+    "focus": "Pluralformen von tanë/tona, tuaj/tuaja, tyre",
+    "examples": "vajzat tona, djemtë tuaj, fëmijët e tyre"
+  },
+  {
+    "id": 31,
+    "title": "Possessivpronomen mit Genitiv",
+    "focus": "Besitzketten",
+    "examples": "familja e gruas sime"
+  },
+  {
+    "id": 32,
+    "title": "Possessivpronomen mit Dativ und Ablativ",
+    "focus": "wem/von wem mit Besitz",
+    "examples": "i flas gruas sime, prej familjes sime"
+  },
+  {
+    "id": 33,
+    "title": "Genitiv Singular I: maskuline Nomen",
+    "focus": "Besitz/Zuordnung",
+    "examples": "libri i mikut, babai i djalit"
+  },
+  {
+    "id": 34,
+    "title": "Genitiv Singular II: feminine Nomen",
+    "focus": "feminine Genitivformen",
+    "examples": "shtëpia e nënës, familja e gruas"
+  },
+  {
+    "id": 35,
+    "title": "Genitiv Plural",
+    "focus": "Besitz im Plural",
+    "examples": "shtëpia e prindërve, çantat e fëmijëve"
+  },
+  {
+    "id": 36,
+    "title": "Gelenkartikel im Genitiv: i/e/të/së",
+    "focus": "welcher kleine Artikel steht vor dem Genitiv?",
+    "examples": "babai i…, familja e…, librat e…"
+  },
+  {
+    "id": 37,
+    "title": "Genitiv mit zusammengesetzten Begriffen",
+    "focus": "typische Nominalgruppen",
+    "examples": "skuadra e futbollit, çanta e shkollës"
+  },
+  {
+    "id": 38,
+    "title": "Genitiv-Wiederholung aktiv",
+    "focus": "eigene Sätze mit Besitz/Zuordnung bilden",
+    "examples": "shtëpia e mikut tim"
+  },
+  {
+    "id": 39,
+    "title": "Dativ Singular I",
+    "focus": "Wem? einfache Nomen",
+    "examples": "i jap mikut, i flas nënës"
+  },
+  {
+    "id": 40,
+    "title": "Dativ Singular II mit Kurzpronomen",
+    "focus": "i + Dativobjekt",
+    "examples": "I jap librin mikut."
+  },
+  {
+    "id": 41,
+    "title": "Dativ Plural I",
+    "focus": "Wem? Pluralformen",
+    "examples": "u flas prindërve"
+  },
+  {
+    "id": 42,
+    "title": "Dativ Plural II mit Kurzpronomen",
+    "focus": "u + Plural-Dativobjekt",
+    "examples": "U jap ujë fëmijëve."
+  },
+  {
+    "id": 43,
+    "title": "Ablativ Singular",
+    "focus": "von/aus/von … her",
+    "examples": "prej mikut, nga qyteti"
+  },
+  {
+    "id": 44,
+    "title": "Ablativ Plural",
+    "focus": "Pluralformen im Ablativ",
+    "examples": "prej prindërve, nga vendet"
+  },
+  {
+    "id": 45,
+    "title": "Präpositionen mit Ablativ",
+    "focus": "typische Ablativ-Präpositionen",
+    "examples": "prej, përveç, nga"
+  },
+  {
+    "id": 46,
+    "title": "Fälle gemischt I: Nom./Akk./Gen.",
+    "focus": "häufigste drei Fälle vergleichen",
+    "examples": "gruaja, gruan, gruas"
+  },
+  {
+    "id": 47,
+    "title": "Fälle gemischt II: Dat./Abl.",
+    "focus": "Dativ und Ablativ vergleichen",
+    "examples": "gruas, prej gruas"
+  },
+  {
+    "id": 48,
+    "title": "me vs. më",
+    "focus": "mit vs. mich/mir",
+    "examples": "me gruan, më ndihmon"
+  },
+  {
+    "id": 49,
+    "title": "Akkusativ-Kurzpronomen Singular",
+    "focus": "më, të, e",
+    "examples": "Ai më njeh. E shoh atë."
+  },
+  {
+    "id": 50,
+    "title": "Akkusativ-Kurzpronomen Plural",
+    "focus": "na, ju, i",
+    "examples": "Ata na shohin. I njoh ata."
+  },
+  {
+    "id": 51,
+    "title": "Dativ-Kurzpronomen Singular",
+    "focus": "më, të, i",
+    "examples": "Më jep librin. I flas asaj."
+  },
+  {
+    "id": 52,
+    "title": "Dativ-Kurzpronomen Plural",
+    "focus": "na, ju, u",
+    "examples": "Na jep bukë. U flas fëmijëve."
+  },
+  {
+    "id": 53,
+    "title": "Akkusativ vs. Dativ-Kurzpronomen",
+    "focus": "gleiche Formen, andere Funktion",
+    "examples": "më sheh vs. më jep"
+  },
+  {
+    "id": 54,
+    "title": "Doppelmarkierung Akkusativ I",
+    "focus": "bestimmtes Objekt + Kurzpronomen erkennen",
+    "examples": "E njoh atë."
+  },
+  {
+    "id": 55,
+    "title": "Doppelmarkierung Akkusativ II",
+    "focus": "mit bestimmten Nomen",
+    "examples": "E takoj vajzën."
+  },
+  {
+    "id": 56,
+    "title": "Doppelmarkierung Dativ I",
     "focus": "Dativobjekt + Kurzpronomen",
     "examples": "I jap librin mikut."
   },
   {
-    "id": 30,
-    "title": "Verschmolzene Kurzpronomen Singular",
-    "focus": "ma, ta, ia, na e, jua, ua",
-    "examples": "Ma jep librin. Ia tregoj rrugën."
+    "id": 57,
+    "title": "Doppelmarkierung Dativ II",
+    "focus": "Plural",
+    "examples": "U tregoj rrugën miqve."
   },
   {
-    "id": 31,
-    "title": "Verschmolzene Kurzpronomen Plural",
-    "focus": "mi, ti, ia, nai, jua, ua",
-    "examples": "Mi jep librat."
+    "id": 58,
+    "title": "Verschmolzene Kurzpronomen I",
+    "focus": "Singular: ma, ta, ia",
+    "examples": "Ma jep librin."
   },
   {
-    "id": 32,
-    "title": "Reflexive Verben Präsens: Grundformen",
-    "focus": "lahem, vishem, krihem, zgjohem, ngrihem",
-    "examples": "Unë lahem. Ti vishesh."
+    "id": 59,
+    "title": "Verschmolzene Kurzpronomen II",
+    "focus": "Plural/weitere Formen",
+    "examples": "jua, ua, mi, ti"
   },
   {
-    "id": 33,
-    "title": "Reflexive Verben: Morgenroutine",
-    "focus": "Tagesablauf mit reflexiven Verben",
-    "examples": "zgjohem, lahem, vishem, dal"
+    "id": 60,
+    "title": "Reflexive Verben I: Grundformen",
+    "focus": "Konjugation im Präsens",
+    "examples": "lahem, lahesh, lahet"
   },
   {
-    "id": 34,
-    "title": "Reflexiv vs. nicht-reflexiv",
+    "id": 61,
+    "title": "Reflexive Verben II: Morgenroutine",
+    "focus": "Alltagssätze",
+    "examples": "zgjohem, lahem, vishem, krihem"
+  },
+  {
+    "id": 62,
+    "title": "Reflexive Verben III: normale vs. reflexive Verben",
     "focus": "Bedeutungsunterschied",
-    "examples": "laj = ich wasche etwas / lahem = ich wasche mich"
+    "examples": "laj vs. lahem, vesh vs. vishem"
   },
   {
-    "id": 35,
-    "title": "Reflexive/passive Formen erkennen",
-    "focus": "passive Bedeutung nur erkennen",
+    "id": 63,
+    "title": "Reflexive Verben IV: Verben auf -hem/-em",
+    "focus": "Muster unterscheiden",
+    "examples": "ngrihem, përgatitem, kthehem"
+  },
+  {
+    "id": 64,
+    "title": "Reflexiv/passiv erkennen",
+    "focus": "passive Bedeutung nur verstehen",
     "examples": "përdoret, shihet, lahet"
   },
   {
-    "id": 36,
-    "title": "Körper & Gesundheit: më dhemb",
+    "id": 65,
+    "title": "Gesundheit I: Körperteile + më dhemb",
     "focus": "Schmerzen ausdrücken",
     "examples": "Më dhemb koka."
   },
   {
-    "id": 37,
-    "title": "Gesundheit: kam nevojë për / më duhet",
+    "id": 66,
+    "title": "Gesundheit II: kam nevojë për / më duhet",
     "focus": "brauchen / nötig sein",
-    "examples": "Kam nevojë për ndihmë. Më duhen ilaçe."
+    "examples": "Kam nevojë për ilaçe. Më duhet ndihmë."
   },
   {
-    "id": 38,
-    "title": "Imperativ Singular",
-    "focus": "Aufforderungen an eine Person",
+    "id": 67,
+    "title": "Gesundheit III: Arzt/Apotheke-Dialoge",
+    "focus": "typische Fragen und Antworten",
+    "examples": "Çfarë të dhemb? Të shkuara!"
+  },
+  {
+    "id": 68,
+    "title": "Imperativ Singular I",
+    "focus": "Grundformen",
     "examples": "Shih! Prit! Eja!"
   },
   {
-    "id": 39,
-    "title": "Imperativ Plural / Höflichkeitsform",
-    "focus": "Aufforderungen an mehrere / höflich",
+    "id": 69,
+    "title": "Imperativ Singular II mit Objekt/Kurzpronomen",
+    "focus": "Aufforderungen mit Ergänzung",
+    "examples": "Ma jep! Tregomë!"
+  },
+  {
+    "id": 70,
+    "title": "Imperativ Plural/Höflichkeitsform",
+    "focus": "höfliche Aufforderungen",
     "examples": "Shihni! Prisni! Urdhëroni!"
   },
   {
-    "id": 40,
+    "id": 71,
     "title": "Negativer Imperativ mit mos",
     "focus": "Verbote",
     "examples": "Mos prit! Mos lëviz!"
   },
   {
-    "id": 41,
+    "id": 72,
     "title": "Imperativ im Alltag",
-    "focus": "Arzt, Laden, Familie, Hotel",
+    "focus": "Laden, Arzt, Hotel, Familie",
     "examples": "Firmosni këtu! Prit pak!"
   },
   {
-    "id": 42,
-    "title": "Basiskonnektoren",
-    "focus": "einfache Sätze verbinden",
-    "examples": "dhe, por, ose, sepse, prandaj"
-  },
-  {
-    "id": 43,
-    "title": "Nebensätze mit që",
-    "focus": "dass-Sätze",
-    "examples": "Mendoj që… / Di që…"
-  },
-  {
-    "id": 44,
-    "title": "Relativsätze mit që",
-    "focus": "der/die/das",
-    "examples": "shtëpia që shoh, studentja që vjen"
-  },
-  {
-    "id": 45,
-    "title": "Temporale Nebensätze mit kur",
-    "focus": "wenn/als",
-    "examples": "Kur jam në shtëpi, lexoj."
-  },
-  {
-    "id": 46,
-    "title": "Gegensätze mit ndërsa",
-    "focus": "während / wohingegen",
-    "examples": "Unë punoj, ndërsa ajo lexon."
-  },
-  {
-    "id": 47,
-    "title": "Zielangaben mit për të",
-    "focus": "um zu",
-    "examples": "Shkoj në dyqan për të blerë bukë."
-  },
-  {
-    "id": 48,
-    "title": "pa + Verbform",
-    "focus": "ohne zu",
-    "examples": "pa folur, pa ngrënë"
-  },
-  {
-    "id": 49,
-    "title": "Gleichzeitigkeit mit duke",
-    "focus": "während / indem",
-    "examples": "Duke lexuar, pi kafe."
-  },
-  {
-    "id": 50,
-    "title": "Zukunft mit do të",
-    "focus": "einfache Zukunft",
-    "examples": "Do të shkoj. Do të blej."
-  },
-  {
-    "id": 51,
-    "title": "Zukunft: Pläne und Empfehlungen",
-    "focus": "Reise, Wochenende, Besuch",
-    "examples": "Do të shkojmë nesër."
-  },
-  {
-    "id": 52,
-    "title": "Perfekt: Grundidee",
-    "focus": "zusammengesetzte Vergangenheit",
-    "examples": "kam punuar, kam mësuar"
-  },
-  {
-    "id": 53,
-    "title": "Perfekt mit kam",
-    "focus": "aktive regelmäßige Verben",
-    "examples": "kam lexuar, kam blerë, kam punuar"
-  },
-  {
-    "id": 54,
-    "title": "Perfekt mit jam",
-    "focus": "Bewegung/reflexive Verben vorsichtig",
-    "examples": "jam kthyer, jam zgjuar"
-  },
-  {
-    "id": 55,
-    "title": "Einfache Vergangenheit/Aorist erkennen",
-    "focus": "Formen in Texten erkennen",
-    "examples": "shkova, pashë, bëra"
-  },
-  {
-    "id": 56,
-    "title": "Einfache Vergangenheit: häufige Verben aktiv",
-    "focus": "wenige wichtige Formen",
-    "examples": "isha, kisha, shkova, pashë"
-  },
-  {
-    "id": 57,
-    "title": "Imperfekt: Grundidee",
-    "focus": "Zustand/Gewohnheit in der Vergangenheit",
-    "examples": "isha, kisha, bëja, shkoja"
-  },
-  {
-    "id": 58,
-    "title": "Imperfekt vs. Perfekt/Aorist",
-    "focus": "Gewohnheit vs. abgeschlossene Handlung",
-    "examples": "shkoja vs. shkova"
-  },
-  {
-    "id": 59,
-    "title": "Adjektive maskulin/feminin Singular",
-    "focus": "Grundformen",
-    "examples": "i mirë / e mirë, i madh / e madhe"
-  },
-  {
-    "id": 60,
-    "title": "Adjektive Plural",
-    "focus": "männlich/weiblich Plural",
-    "examples": "të mirë / të mira"
-  },
-  {
-    "id": 61,
-    "title": "Adjektive mit bestimmten Nomen",
-    "focus": "bestimmte Nominalgruppen",
-    "examples": "shtëpia e madhe, dyqani i vogël"
-  },
-  {
-    "id": 62,
-    "title": "Adjektive in den Fällen",
-    "focus": "Nominativ/Akkusativ/Genitiv einfach",
-    "examples": "gruan e mirë, shtëpia e madhe"
-  },
-  {
-    "id": 63,
-    "title": "Zusammengesetzte Adjektive",
-    "focus": "Wortbildung",
-    "examples": "kokëfortë, zemërluan, gojëmbël"
-  },
-  {
-    "id": 64,
-    "title": "Steigerung",
-    "focus": "mehr / weniger / am meisten",
-    "examples": "më i mirë, më shumë, më pak"
-  },
-  {
-    "id": 65,
-    "title": "Modalverben und modalähnliche Ausdrücke",
-    "focus": "wollen, können, müssen, brauchen",
-    "examples": "dua, dëshiroj, mund, duhet, më duhet"
-  },
-  {
-    "id": 66,
-    "title": "Empfehlungen geben",
-    "focus": "Ratschläge und Vorschläge",
-    "examples": "Të rekomandoj… / Duhet të…"
-  },
-  {
-    "id": 67,
-    "title": "Bitten und Höflichkeit",
-    "focus": "höflich fragen/reagieren",
-    "examples": "ju lutem, a mund…, më falni"
-  },
-  {
-    "id": 68,
-    "title": "Meinung ausdrücken",
-    "focus": "denken/glauben/meinen",
-    "examples": "mendoj që, besoj që, më pëlqen"
-  },
-  {
-    "id": 69,
-    "title": "Gefühle und Zustände",
-    "focus": "Befinden beschreiben",
-    "examples": "ndihem mirë, jam i lodhur"
-  },
-  {
-    "id": 70,
-    "title": "ç vs. çfarë",
-    "focus": "Frageformen",
-    "examples": "Çfarë bën? Ç’kemi?"
-  },
-  {
-    "id": 71,
-    "title": "as… as und doppelte Verneinung",
-    "focus": "weder… noch / kein…",
-    "examples": "Nuk kam as kohë, as para."
-  },
-  {
-    "id": 72,
-    "title": "Unpersönliche Verben",
-    "focus": "Wetter, Notwendigkeit, Gefallen",
-    "examples": "bie shi, bën vapë, duhet"
-  },
-  {
     "id": 73,
-    "title": "më pëlqen / më pëlqejnë",
-    "focus": "gefallen im Singular/Plural",
-    "examples": "Më pëlqen kafeja. Më pëlqejnë këpucët."
+    "title": "Konnektoren I: Basis",
+    "focus": "einfache Verbindung",
+    "examples": "dhe, por, ose"
   },
   {
     "id": 74,
-    "title": "Zahlen, Mengen, Preise",
-    "focus": "Einkauf und Restaurant",
-    "examples": "një kile, sa kushton, sa bëjnë bashkë"
+    "title": "Konnektoren II: Grund/Folge",
+    "focus": "Begründung und Folge",
+    "examples": "sepse, prandaj, ndaj"
   },
   {
     "id": 75,
-    "title": "Uhrzeit und Tageszeiten",
-    "focus": "Uhrzeit + Tagesablauf",
-    "examples": "në orën dhjetë, në mëngjes, sonte"
+    "title": "Konnektoren III: Gegensatz",
+    "focus": "nachdem/während/obwohl vorbereiten",
+    "examples": "ndërsa, megjithatë"
   },
   {
     "id": 76,
-    "title": "Tage, Monate, Jahreszeiten",
-    "focus": "Kalender und Zeitangaben",
-    "examples": "të hënën, në verë, në janar"
+    "title": "Nebensätze mit që I",
+    "focus": "dass-Sätze nach Denken/Sagen/Wissen",
+    "examples": "Mendoj që… / Di që…"
   }
 ];
-
 const VOCAB = [
   {
     "lesson": "Lektion 1 – Begrüßung, Höflichkeit, Basiswörter",
@@ -4959,682 +4958,1268 @@ const VOCAB = [
     "sq": "sa?"
   }
 ];
-
 const SESSIONS = [
   {
     "id": 1,
-    "title": "Sitzung 1: Präsens regelmäßiger Verben auf -oj",
-    "review": "Basis: Pronomen und einfache Wörter",
+    "title": "Sitzung 1: Präsens regelmäßiger Verben I: -oj-Verben",
+    "review": "Basiswörter",
     "newTopicId": 1,
     "tags": [
-      "Alltag",
-      "Lernen",
-      "Arbeit",
-      "Wohnen"
-    ],
-    "vocab": [
-      "unë",
-      "ti",
-      "ai",
-      "ajo",
-      "ne",
-      "ju",
-      "ata",
-      "punoj",
-      "mësoj",
-      "kuptoj",
-      "shpjegoj",
-      "banoj",
-      "qëndroj",
-      "filloj",
-      "mbaroj",
-      "dëgjoj",
-      "lexoj",
-      "shkruaj",
-      "sot",
-      "nesër",
-      "këtu",
-      "në shtëpi",
-      "në punë"
+      "A2",
+      "Präsens"
     ],
     "exercises": [
       {
         "id": "overview",
         "type": "info",
         "title": "1. Überblick",
-        "html": "<p><b>Neu:</b> Präsens regelmäßiger Verben auf <b>-oj</b>. Du übst kurze Alltagssätze mit unë/ti/ai/ajo/ne/ju/ata.</p><p><b>Ziel:</b> Du kannst sagen, was du arbeitest, lernst, verstehst, beginnst oder erklärst.</p>"
+        "html": "<p>Wiederholung: <b>Basiswörter</b>. Neues Thema: <b>Präsens regelmäßiger Verben I: -oj-Verben</b>.</p>"
       },
       {
         "id": "grammar",
         "type": "info",
-        "title": "2. Grammatik kurz",
-        "html": "<p>Viele regelmäßige Verben enden in der Grundform auf <b>-oj</b>: punoj, mësoj, kuptoj. Im Präsens ändert sich die Endung je nach Person.</p><ul><li>unë punoj – ich arbeite</li><li>ti punon – du arbeitest</li><li>ai/ajo punon – er/sie arbeitet</li><li>ne punojmë – wir arbeiten</li><li>ju punoni – ihr/Sie arbeitet/arbeiten</li><li>ata/ato punojnë – sie arbeiten</li></ul><p>Typische Fehler: <b>ne punoj</b> → richtig: <b>ne punojmë</b>; <b>ju punon</b> → richtig: <b>ju punoni</b>.</p>"
-      },
-      {
-        "id": "warmup",
-        "type": "text",
-        "title": "3. Aufwärmen: Antworte kurz auf Albanisch",
-        "items": [
-          "A punon sot?",
-          "Ku banon?",
-          "A mëson shqip?",
-          "Çfarë lexon?",
-          "A kupton mirë?"
-        ],
-        "solutions": [
-          "Po, punoj sot. / Jo, nuk punoj sot.",
-          "Banoj në ...",
-          "Po, mësoj shqip.",
-          "Lexoj një libër / një fjali.",
-          "Po, kuptoj mirë. / Jo, nuk kuptoj mirë."
-        ]
-      },
-      {
-        "id": "a",
-        "type": "tf",
-        "title": "4. Richtig oder falsch?",
-        "context": "Ardiani mëson shqip. Ai punon në zyrë dhe banon në qytet. Sot ai lexon një fjali dhe shkruan një përgjigje.",
-        "items": [
-          {
-            "s": "Ardiani mëson shqip.",
-            "a": "po"
-          },
-          {
-            "s": "Ai punon në shkollë.",
-            "a": "jo"
-          },
-          {
-            "s": "Ai banon në qytet.",
-            "a": "po"
-          },
-          {
-            "s": "Sot ai lexon një fjalë.",
-            "a": "jo"
-          },
-          {
-            "s": "Ai shkruan një përgjigje.",
-            "a": "po"
-          },
-          {
-            "s": "Ai nuk punon.",
-            "a": "jo"
-          }
-        ]
-      },
-      {
-        "id": "b",
-        "type": "cloze",
-        "title": "5. Lückensätze: Setze die richtige Verbform ein",
-        "items": [
-          {
-            "q": "Unë ___ (punoj) në zyrë.",
-            "a": "punoj"
-          },
-          {
-            "q": "Ti ___ (mësoj) shqip.",
-            "a": "mëson"
-          },
-          {
-            "q": "Ajo ___ (kuptoj) fjalën.",
-            "a": "kupton"
-          },
-          {
-            "q": "Ne ___ (lexoj) në shtëpi.",
-            "a": "lexojmë"
-          },
-          {
-            "q": "Ju ___ (shpjegoj) rregullin.",
-            "a": "shpjegoni"
-          },
-          {
-            "q": "Ata ___ (punoj) sot.",
-            "a": "punojnë"
-          },
-          {
-            "q": "Unë ___ (banoj) këtu.",
-            "a": "banoj"
-          },
-          {
-            "q": "Ne ___ (filloj) tani.",
-            "a": "fillojmë"
-          }
-        ]
-      },
-      {
-        "id": "c",
-        "type": "text",
-        "title": "6. Deutsch → Albanisch",
-        "items": [
-          "Ich arbeite heute.",
-          "Du lernst Albanisch.",
-          "Wir wohnen hier.",
-          "Sie erklären die Regel.",
-          "Ich verstehe den Satz.",
-          "Ihr schreibt eine Antwort."
-        ],
-        "solutions": [
-          "Unë punoj sot.",
-          "Ti mëson shqip.",
-          "Ne banojmë këtu.",
-          "Ata/Ato shpjegojnë rregullin.",
-          "Unë kuptoj fjalinë.",
-          "Ju shkruani një përgjigje."
-        ]
-      },
-      {
-        "id": "d",
-        "type": "text",
-        "title": "7. Fehler finden und korrigieren",
-        "items": [
-          "Unë punon sot.",
-          "Ne mësoj shqip.",
-          "Ju kupton fjalën.",
-          "Ata punoj në zyrë.",
-          "Ti shpjegoj rregullin.",
-          "Ajo lexoj një libër."
-        ],
-        "solutions": [
-          "Unë punoj sot.",
-          "Ne mësojmë shqip.",
-          "Ju kuptoni fjalën.",
-          "Ata punojnë në zyrë.",
-          "Ti shpjegon rregullin.",
-          "Ajo lexon një libër."
-        ]
-      },
-      {
-        "id": "e",
-        "type": "match",
-        "title": "8. Kombinieren",
-        "left": [
-          "Unë punoj",
-          "Ti mëson",
-          "Ne banojmë",
-          "Ju shpjegoni",
-          "Ata lexojnë",
-          "Ajo shkruan"
-        ],
-        "right": [
-          "në zyrë.",
-          "shqip.",
-          "këtu.",
-          "rregullin.",
-          "një libër.",
-          "një përgjigje."
-        ],
-        "solutions": [
-          "Unë punoj në zyrë.",
-          "Ti mëson shqip.",
-          "Ne banojmë këtu.",
-          "Ju shpjegoni rregullin.",
-          "Ata lexojnë një libër.",
-          "Ajo shkruan një përgjigje."
-        ]
-      },
-      {
-        "id": "f",
-        "type": "text",
-        "title": "9. Satzbau aktiv: Bilde kurze Sätze",
-        "items": [
-          "unë / punoj / sot",
-          "ne / mësoj / shqip",
-          "ti / kuptoj / fjali",
-          "ju / shkruaj / përgjigje",
-          "ata / banoj / qytet"
-        ],
-        "solutions": [
-          "Unë punoj sot.",
-          "Ne mësojmë shqip.",
-          "Ti kupton fjalinë.",
-          "Ju shkruani një përgjigje.",
-          "Ata banojnë në qytet."
-        ]
-      },
-      {
-        "id": "g",
-        "type": "text",
-        "title": "10. Umformungen",
-        "items": [
-          "Unë punoj sot. → wir",
-          "Ti mëson shqip. → Sie/ihr",
-          "Ajo lexon. → sie Plural",
-          "Unë kuptoj. → negativ",
-          "Ju shkruani. → Frage"
-        ],
-        "solutions": [
-          "Ne punojmë sot.",
-          "Ju mësoni shqip.",
-          "Ato/Ata lexojnë.",
-          "Unë nuk kuptoj.",
-          "A shkruani ju?"
-        ]
-      },
-      {
-        "id": "h",
-        "type": "dialog",
-        "title": "11. Mini-Dialog: in der Sprachschule",
-        "lines": [
-          "Mësuesi: Mirëdita! A mëson shqip?",
-          "Ti: ___",
-          "Mësuesi: Ku banon?",
-          "Ti: ___",
-          "Mësuesi: A kupton rregullin?",
-          "Ti: ___",
-          "Mësuesi: Shumë mirë. Çfarë shkruan tani?",
-          "Ti: ___",
-          "Mësuesi: A punon sot?",
-          "Ti: ___"
-        ],
-        "solutions": [
-          "Po, mësoj shqip.",
-          "Banoj në ...",
-          "Po, kuptoj rregullin.",
-          "Shkruaj një përgjigje.",
-          "Po, punoj sot. / Jo, nuk punoj sot."
-        ]
-      },
-      {
-        "id": "i",
-        "type": "text",
-        "title": "12. Albanisch → Deutsch",
-        "items": [
-          "Unë punoj në zyrë.",
-          "Ti mëson shqip.",
-          "Ne banojmë këtu.",
-          "Ju shpjegoni rregullin.",
-          "Ata lexojnë një libër."
-        ],
-        "solutions": [
-          "Ich arbeite im Büro.",
-          "Du lernst Albanisch.",
-          "Wir wohnen hier.",
-          "Ihr/Sie erklärt/erklären die Regel.",
-          "Sie lesen ein Buch."
-        ]
-      },
-      {
-        "id": "abschluss",
-        "type": "info",
-        "title": "13. Abschluss",
-        "html": "<p><b>Merke:</b> -oj-Verben: unë -oj, ti/ai/ajo -on, ne -ojmë, ju -oni, ata/ato -ojnë.</p><p><b>Hausaufgaben:</b> 1) Schreibe 5 Sätze mit unë. 2) Forme sie in ne um. 3) Sprich 3 Sätze laut vor.</p>"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Sitzung 2: Unregelmäßige Verben im Präsens",
-    "review": "Präsens regelmäßiger -oj-Verben",
-    "newTopicId": 2,
-    "tags": [
-      "Alltag",
-      "Essen",
-      "Reisen"
-    ],
-    "vocab": [
-      "jam",
-      "kam",
-      "vij",
-      "shkoj",
-      "ha",
-      "pi",
-      "di",
-      "dua",
-      "dëshiroj",
-      "mund",
-      "shkojmë",
-      "vijmë",
-      "bukë",
-      "ujë",
-      "kafe",
-      "sot",
-      "nesër",
-      "në shtëpi",
-      "në punë"
-    ],
-    "exercises": [
-      {
-        "id": "overview",
-        "type": "info",
-        "title": "1. Überblick",
-        "html": "<p><b>Wiederholung:</b> -oj-Verben. <b>Neu:</b> wichtige unregelmäßige Verben: jam, kam, vij, shkoj, ha, pi, di, dua.</p>"
-      },
-      {
-        "id": "grammar",
-        "type": "info",
-        "title": "2. Grammatik kurz",
-        "html": "<ul><li>jam – ich bin, je – du bist, është – er/sie ist, jemi – wir sind, jeni – ihr/Sie seid/sind, janë – sie sind</li><li>kam – ich habe, ke, ka, kemi, keni, kanë</li><li>shkoj – ich gehe, shkon, shkon, shkojmë, shkoni, shkojnë</li><li>vij – ich komme, vjen, vjen, vijmë, vini, vijnë</li></ul>"
+        "title": "2. Grammatik ausführlicher",
+        "html": "<p><b>-oj-Verben</b>: sichere Endungen für Alltagssätze.</p><div class=\"tablewrap\"><table><thead><tr><th>Person</th><th>punoj</th><th>mësoj</th><th>Beispiel</th></tr></thead><tbody><tr><td>unë</td><td>punoj</td><td>mësoj</td><td>Unë punoj sot.</td></tr><tr><td>ti</td><td>punon</td><td>mëson</td><td>Ti mëson shqip.</td></tr><tr><td>ai/ajo</td><td>punon</td><td>mëson</td><td>Ajo punon në zyrë.</td></tr><tr><td>ne</td><td>punojmë</td><td>mësojmë</td><td>Ne mësojmë bashkë.</td></tr><tr><td>ju</td><td>punoni</td><td>mësoni</td><td>Ju punoni nesër.</td></tr><tr><td>ata/ato</td><td>punojnë</td><td>mësojnë</td><td>Ata mësojnë fjalë.</td></tr></tbody></table></div>"
       },
       {
         "id": "warmup",
         "type": "text",
         "title": "3. Aufwärmen",
         "items": [
-          "A je në shtëpi?",
-          "A ke kafe?",
-          "Ku shkon sot?",
-          "A vjen nesër?",
-          "Çfarë pi?"
+          "Çfarë bën sot?",
+          "Ku je tani?",
+          "A ke kohë?"
         ],
         "solutions": [
-          "Po, jam në shtëpi.",
-          "Po, kam kafe.",
-          "Shkoj në punë / në qytet.",
-          "Po, vij nesër.",
-          "Pi ujë/kafe."
+          "Sot punoj / mësoj.",
+          "Jam në shtëpi / në punë.",
+          "Po, kam kohë. / Jo, nuk kam kohë."
         ]
       },
       {
-        "id": "b",
+        "id": "cloze",
         "type": "cloze",
-        "title": "4. Lückensätze",
+        "title": "4. Lücken gemischt",
         "items": [
           {
-            "q": "Unë ___ në shtëpi. (jam)",
-            "a": "jam"
+            "q": "Sot ne ___ (mbaroj) punën herët.",
+            "a": "mbarojmë"
           },
           {
-            "q": "Ti ___ ujë. (kam)",
-            "a": "ke"
+            "q": "Ajo ___ (dëgjoj) një këngë.",
+            "a": "dëgjon"
           },
           {
-            "q": "Ajo ___ në punë. (shkoj)",
-            "a": "shkon"
+            "q": "Ata ___ (mësoj) fjalë të reja.",
+            "a": "mësojnë"
           },
           {
-            "q": "Ne ___ nga Gjermania. (vij)",
+            "q": "Ti ___ (kuptoj) pyetjen?",
+            "a": "kupton"
+          }
+        ]
+      },
+      {
+        "id": "match",
+        "type": "match",
+        "title": "5. Direkt verbinden statt abschreiben",
+        "left": [
+          "Në mëngjes",
+          "Në qytet",
+          "Te mjeku",
+          "Në shtëpi",
+          "Nesër"
+        ],
+        "right": [
+          "pi kafe.",
+          "shkoj në treg.",
+          "më duhet ndihmë.",
+          "lexoj një libër.",
+          "vij herët."
+        ],
+        "solutions": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "id": "mcq",
+        "type": "mcq",
+        "title": "6. Multiple Choice",
+        "items": [
+          {
+            "q": "Ne ___ sot.",
+            "options": [
+              "punoj",
+              "punojmë",
+              "punojnë"
+            ],
+            "a": "punojmë"
+          },
+          {
+            "q": "Ajo ___ në shtëpi.",
+            "options": [
+              "jam",
+              "është",
+              "jemi"
+            ],
+            "a": "është"
+          },
+          {
+            "q": "Ju ___ ujë.",
+            "options": [
+              "keni",
+              "ka",
+              "kam"
+            ],
+            "a": "keni"
+          }
+        ]
+      },
+      {
+        "id": "translate",
+        "type": "text",
+        "title": "7. Deutsch → Albanisch",
+        "items": [
+          "Wir lernen heute Albanisch.",
+          "Sie verstehen die Frage."
+        ],
+        "solutions": [
+          "Ne mësojmë shqip sot.",
+          "Ata/Ato kuptojnë pyetjen."
+        ]
+      },
+      {
+        "id": "error",
+        "type": "text",
+        "title": "8. Fehler finden",
+        "items": [
+          "Ne punon sot.",
+          "Ti kam kohë.",
+          "Ju është në hotel.",
+          "Ata pi kafe."
+        ],
+        "solutions": [
+          "Ne punojmë sot.",
+          "Ti ke kohë.",
+          "Ju jeni në hotel.",
+          "Ata pinë kafe."
+        ]
+      },
+      {
+        "id": "abschluss",
+        "type": "info",
+        "title": "9. Abschluss",
+        "html": "<p><b>Selbstcheck:</b> Thema als gelernt/wiederholen/schwierig markieren und eine Notiz ergänzen.</p>"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Sitzung 2: Präsens regelmäßiger Verben II: weitere häufige Muster",
+    "review": "-oj-Verben",
+    "newTopicId": 2,
+    "tags": [
+      "A2",
+      "Präsens"
+    ],
+    "exercises": [
+      {
+        "id": "overview",
+        "type": "info",
+        "title": "1. Überblick",
+        "html": "<p>Wiederholung: <b>-oj-Verben</b>. Neues Thema: <b>Präsens regelmäßiger Verben II: weitere häufige Muster</b>.</p>"
+      },
+      {
+        "id": "grammar",
+        "type": "info",
+        "title": "2. Grammatik ausführlicher",
+        "html": "<p><b>shkoj</b> wird hier als häufiges weiteres Präsensmuster geübt, nicht als unregelmäßig.</p><div class=\"tablewrap\"><table><thead><tr><th>Verb</th><th>unë</th><th>ti/ai/ajo</th><th>ne</th><th>ju</th><th>ata/ato</th></tr></thead><tbody><tr><td>shkoj</td><td>shkoj</td><td>shkon</td><td>shkojmë</td><td>shkoni</td><td>shkojnë</td></tr><tr><td>lexoj</td><td>lexoj</td><td>lexon</td><td>lexojmë</td><td>lexoni</td><td>lexojnë</td></tr><tr><td>dëgjoj</td><td>dëgjoj</td><td>dëgjon</td><td>dëgjojmë</td><td>dëgjoni</td><td>dëgjojnë</td></tr><tr><td>shkruaj</td><td>shkruaj</td><td>shkruan</td><td>shkruajmë</td><td>shkruani</td><td>shkruajnë</td></tr></tbody></table></div>"
+      },
+      {
+        "id": "warmup",
+        "type": "text",
+        "title": "3. Aufwärmen",
+        "items": [
+          "Çfarë bën sot?",
+          "Ku je tani?",
+          "A ke kohë?"
+        ],
+        "solutions": [
+          "Sot punoj / mësoj.",
+          "Jam në shtëpi / në punë.",
+          "Po, kam kohë. / Jo, nuk kam kohë."
+        ]
+      },
+      {
+        "id": "cloze",
+        "type": "cloze",
+        "title": "4. Lücken gemischt",
+        "items": [
+          {
+            "q": "Ajo ___ (shkruaj) një fjalë.",
+            "a": "shkruan"
+          },
+          {
+            "q": "Ju ___ (shkoj) në hotel sot?",
+            "a": "shkoni"
+          },
+          {
+            "q": "Unë ___ (lexoj) në mbrëmje.",
+            "a": "lexoj"
+          },
+          {
+            "q": "Ata ___ (dëgjoj) radio.",
+            "a": "dëgjojnë"
+          }
+        ]
+      },
+      {
+        "id": "match",
+        "type": "match",
+        "title": "5. Direkt verbinden statt abschreiben",
+        "left": [
+          "Në mëngjes",
+          "Në qytet",
+          "Te mjeku",
+          "Në shtëpi",
+          "Nesër"
+        ],
+        "right": [
+          "pi kafe.",
+          "shkoj në treg.",
+          "më duhet ndihmë.",
+          "lexoj një libër.",
+          "vij herët."
+        ],
+        "solutions": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "id": "mcq",
+        "type": "mcq",
+        "title": "6. Multiple Choice",
+        "items": [
+          {
+            "q": "Ne ___ sot.",
+            "options": [
+              "punoj",
+              "punojmë",
+              "punojnë"
+            ],
+            "a": "punojmë"
+          },
+          {
+            "q": "Ajo ___ në shtëpi.",
+            "options": [
+              "jam",
+              "është",
+              "jemi"
+            ],
+            "a": "është"
+          },
+          {
+            "q": "Ju ___ ujë.",
+            "options": [
+              "keni",
+              "ka",
+              "kam"
+            ],
+            "a": "keni"
+          }
+        ]
+      },
+      {
+        "id": "translate",
+        "type": "text",
+        "title": "7. Deutsch → Albanisch",
+        "items": [
+          "Wir gehen in die Stadt.",
+          "Sie liest ein Buch."
+        ],
+        "solutions": [
+          "Ne shkojmë në qytet.",
+          "Ajo lexon një libër."
+        ]
+      },
+      {
+        "id": "error",
+        "type": "text",
+        "title": "8. Fehler finden",
+        "items": [
+          "Ne punon sot.",
+          "Ti kam kohë.",
+          "Ju është në hotel.",
+          "Ata pi kafe."
+        ],
+        "solutions": [
+          "Ne punojmë sot.",
+          "Ti ke kohë.",
+          "Ju jeni në hotel.",
+          "Ata pinë kafe."
+        ]
+      },
+      {
+        "id": "abschluss",
+        "type": "info",
+        "title": "9. Abschluss",
+        "html": "<p><b>Selbstcheck:</b> Thema als gelernt/wiederholen/schwierig markieren und eine Notiz ergänzen.</p>"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Sitzung 3: Präsens häufiger einsilbiger Verben",
+    "review": "weitere Muster",
+    "newTopicId": 3,
+    "tags": [
+      "A2",
+      "Präsens"
+    ],
+    "exercises": [
+      {
+        "id": "overview",
+        "type": "info",
+        "title": "1. Überblick",
+        "html": "<p>Wiederholung: <b>weitere Muster</b>. Neues Thema: <b>Präsens häufiger einsilbiger Verben</b>.</p>"
+      },
+      {
+        "id": "grammar",
+        "type": "info",
+        "title": "2. Grammatik ausführlicher",
+        "html": "<p>Kurze Verben haben eigene Muster.</p><div class=\"tablewrap\"><table><thead><tr><th>Verb</th><th>unë</th><th>ti/ai/ajo</th><th>ne</th><th>ju</th><th>ata/ato</th></tr></thead><tbody><tr><td>ha</td><td>ha</td><td>ha</td><td>hamë</td><td>hani</td><td>hanë</td></tr><tr><td>pi</td><td>pi</td><td>pi</td><td>pimë</td><td>pini</td><td>pinë</td></tr><tr><td>di</td><td>di</td><td>di</td><td>dimë</td><td>dini</td><td>dinë</td></tr><tr><td>fle</td><td>fle</td><td>fle</td><td>flemë</td><td>flini</td><td>flenë</td></tr><tr><td>rri</td><td>rri</td><td>rri</td><td>rrimë</td><td>rrini</td><td>rrinë</td></tr></tbody></table></div>"
+      },
+      {
+        "id": "warmup",
+        "type": "text",
+        "title": "3. Aufwärmen",
+        "items": [
+          "Çfarë bën sot?",
+          "Ku je tani?",
+          "A ke kohë?"
+        ],
+        "solutions": [
+          "Sot punoj / mësoj.",
+          "Jam në shtëpi / në punë.",
+          "Po, kam kohë. / Jo, nuk kam kohë."
+        ]
+      },
+      {
+        "id": "cloze",
+        "type": "cloze",
+        "title": "4. Lücken gemischt",
+        "items": [
+          {
+            "q": "Në mëngjes unë ___ kafe. (pi)",
+            "a": "pi"
+          },
+          {
+            "q": "Fëmijët ___ herët. (fle)",
+            "a": "flenë"
+          },
+          {
+            "q": "Ti ___ ku është dyqani? (di)",
+            "a": "di"
+          },
+          {
+            "q": "Ne ___ në shtëpi sot. (rri)",
+            "a": "rrimë"
+          }
+        ]
+      },
+      {
+        "id": "match",
+        "type": "match",
+        "title": "5. Direkt verbinden statt abschreiben",
+        "left": [
+          "Në mëngjes",
+          "Në qytet",
+          "Te mjeku",
+          "Në shtëpi",
+          "Nesër"
+        ],
+        "right": [
+          "pi kafe.",
+          "shkoj në treg.",
+          "më duhet ndihmë.",
+          "lexoj një libër.",
+          "vij herët."
+        ],
+        "solutions": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "id": "mcq",
+        "type": "mcq",
+        "title": "6. Multiple Choice",
+        "items": [
+          {
+            "q": "Ne ___ sot.",
+            "options": [
+              "punoj",
+              "punojmë",
+              "punojnë"
+            ],
+            "a": "punojmë"
+          },
+          {
+            "q": "Ajo ___ në shtëpi.",
+            "options": [
+              "jam",
+              "është",
+              "jemi"
+            ],
+            "a": "është"
+          },
+          {
+            "q": "Ju ___ ujë.",
+            "options": [
+              "keni",
+              "ka",
+              "kam"
+            ],
+            "a": "keni"
+          }
+        ]
+      },
+      {
+        "id": "translate",
+        "type": "text",
+        "title": "7. Deutsch → Albanisch",
+        "items": [
+          "Wir trinken Wasser.",
+          "Sie essen Brot."
+        ],
+        "solutions": [
+          "Ne pimë ujë.",
+          "Ata/Ato hanë bukë."
+        ]
+      },
+      {
+        "id": "error",
+        "type": "text",
+        "title": "8. Fehler finden",
+        "items": [
+          "Ne punon sot.",
+          "Ti kam kohë.",
+          "Ju është në hotel.",
+          "Ata pi kafe."
+        ],
+        "solutions": [
+          "Ne punojmë sot.",
+          "Ti ke kohë.",
+          "Ju jeni në hotel.",
+          "Ata pinë kafe."
+        ]
+      },
+      {
+        "id": "abschluss",
+        "type": "info",
+        "title": "9. Abschluss",
+        "html": "<p><b>Selbstcheck:</b> Thema als gelernt/wiederholen/schwierig markieren und eine Notiz ergänzen.</p>"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Sitzung 4: Präsens: jam und kam",
+    "review": "einsilbige Verben",
+    "newTopicId": 4,
+    "tags": [
+      "A2",
+      "Präsens"
+    ],
+    "exercises": [
+      {
+        "id": "overview",
+        "type": "info",
+        "title": "1. Überblick",
+        "html": "<p>Wiederholung: <b>einsilbige Verben</b>. Neues Thema: <b>Präsens: jam und kam</b>.</p>"
+      },
+      {
+        "id": "grammar",
+        "type": "info",
+        "title": "2. Grammatik ausführlicher",
+        "html": "<p><b>jam</b> und <b>kam</b> brauchst du ständig.</p><div class=\"tablewrap\"><table><thead><tr><th>Person</th><th>jam</th><th>kam</th></tr></thead><tbody><tr><td>unë</td><td>jam</td><td>kam</td></tr><tr><td>ti</td><td>je</td><td>ke</td></tr><tr><td>ai/ajo</td><td>është</td><td>ka</td></tr><tr><td>ne</td><td>jemi</td><td>kemi</td></tr><tr><td>ju</td><td>jeni</td><td>keni</td></tr><tr><td>ata/ato</td><td>janë</td><td>kanë</td></tr></tbody></table></div>"
+      },
+      {
+        "id": "warmup",
+        "type": "text",
+        "title": "3. Aufwärmen",
+        "items": [
+          "Çfarë bën sot?",
+          "Ku je tani?",
+          "A ke kohë?"
+        ],
+        "solutions": [
+          "Sot punoj / mësoj.",
+          "Jam në shtëpi / në punë.",
+          "Po, kam kohë. / Jo, nuk kam kohë."
+        ]
+      },
+      {
+        "id": "cloze",
+        "type": "cloze",
+        "title": "4. Lücken gemischt",
+        "items": [
+          {
+            "q": "Ajo ___ në farmaci. (jam)",
+            "a": "është"
+          },
+          {
+            "q": "Ne ___ kohë nesër. (kam)",
+            "a": "kemi"
+          },
+          {
+            "q": "Ju ___ në hotel? (jam)",
+            "a": "jeni"
+          },
+          {
+            "q": "Ata ___ para. (kam)",
+            "a": "kanë"
+          }
+        ]
+      },
+      {
+        "id": "match",
+        "type": "match",
+        "title": "5. Direkt verbinden statt abschreiben",
+        "left": [
+          "Në mëngjes",
+          "Në qytet",
+          "Te mjeku",
+          "Në shtëpi",
+          "Nesër"
+        ],
+        "right": [
+          "pi kafe.",
+          "shkoj në treg.",
+          "më duhet ndihmë.",
+          "lexoj një libër.",
+          "vij herët."
+        ],
+        "solutions": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "id": "mcq",
+        "type": "mcq",
+        "title": "6. Multiple Choice",
+        "items": [
+          {
+            "q": "Ne ___ sot.",
+            "options": [
+              "punoj",
+              "punojmë",
+              "punojnë"
+            ],
+            "a": "punojmë"
+          },
+          {
+            "q": "Ajo ___ në shtëpi.",
+            "options": [
+              "jam",
+              "është",
+              "jemi"
+            ],
+            "a": "është"
+          },
+          {
+            "q": "Ju ___ ujë.",
+            "options": [
+              "keni",
+              "ka",
+              "kam"
+            ],
+            "a": "keni"
+          }
+        ]
+      },
+      {
+        "id": "translate",
+        "type": "text",
+        "title": "7. Deutsch → Albanisch",
+        "items": [
+          "Ich bin zu Hause.",
+          "Hast du Zeit?"
+        ],
+        "solutions": [
+          "Unë jam në shtëpi.",
+          "A ke kohë?"
+        ]
+      },
+      {
+        "id": "error",
+        "type": "text",
+        "title": "8. Fehler finden",
+        "items": [
+          "Ne punon sot.",
+          "Ti kam kohë.",
+          "Ju është në hotel.",
+          "Ata pi kafe."
+        ],
+        "solutions": [
+          "Ne punojmë sot.",
+          "Ti ke kohë.",
+          "Ju jeni në hotel.",
+          "Ata pinë kafe."
+        ]
+      },
+      {
+        "id": "abschluss",
+        "type": "info",
+        "title": "9. Abschluss",
+        "html": "<p><b>Selbstcheck:</b> Thema als gelernt/wiederholen/schwierig markieren und eine Notiz ergänzen.</p>"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Sitzung 5: Präsens: dua, mund, duhet, më duhet",
+    "review": "jam und kam",
+    "newTopicId": 5,
+    "tags": [
+      "A2",
+      "Präsens"
+    ],
+    "exercises": [
+      {
+        "id": "overview",
+        "type": "info",
+        "title": "1. Überblick",
+        "html": "<p>Wiederholung: <b>jam und kam</b>. Neues Thema: <b>Präsens: dua, mund, duhet, më duhet</b>.</p>"
+      },
+      {
+        "id": "grammar",
+        "type": "info",
+        "title": "2. Grammatik ausführlicher",
+        "html": "<p>Modalität: wollen, können, müssen, brauchen.</p><div class=\"tablewrap\"><table><thead><tr><th>Ausdruck</th><th>Muster</th><th>Beispiel</th></tr></thead><tbody><tr><td>dua</td><td>dua të + Verb</td><td>Dua të shkoj.</td></tr><tr><td>mund</td><td>mund të + Verb</td><td>Mund të vij.</td></tr><tr><td>duhet</td><td>duhet të + Verb</td><td>Duhet të punoj.</td></tr><tr><td>më duhet/duhen</td><td>+ Nomen</td><td>Më duhet ndihmë. Më duhen ilaçe.</td></tr></tbody></table></div>"
+      },
+      {
+        "id": "warmup",
+        "type": "text",
+        "title": "3. Aufwärmen",
+        "items": [
+          "Çfarë bën sot?",
+          "Ku je tani?",
+          "A ke kohë?"
+        ],
+        "solutions": [
+          "Sot punoj / mësoj.",
+          "Jam në shtëpi / në punë.",
+          "Po, kam kohë. / Jo, nuk kam kohë."
+        ]
+      },
+      {
+        "id": "cloze",
+        "type": "cloze",
+        "title": "4. Lücken gemischt",
+        "items": [
+          {
+            "q": "Unë ___ të shkoj në qytet. (dua)",
+            "a": "dua"
+          },
+          {
+            "q": "Ne ___ të punojmë nesër.",
+            "a": "duhet"
+          },
+          {
+            "q": "A ___ të më ndihmosh?",
+            "a": "mund"
+          },
+          {
+            "q": "Më ___ ilaçe.",
+            "a": "duhen"
+          }
+        ]
+      },
+      {
+        "id": "match",
+        "type": "match",
+        "title": "5. Direkt verbinden statt abschreiben",
+        "left": [
+          "Në mëngjes",
+          "Në qytet",
+          "Te mjeku",
+          "Në shtëpi",
+          "Nesër"
+        ],
+        "right": [
+          "pi kafe.",
+          "shkoj në treg.",
+          "më duhet ndihmë.",
+          "lexoj një libër.",
+          "vij herët."
+        ],
+        "solutions": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "id": "mcq",
+        "type": "mcq",
+        "title": "6. Multiple Choice",
+        "items": [
+          {
+            "q": "Ne ___ sot.",
+            "options": [
+              "punoj",
+              "punojmë",
+              "punojnë"
+            ],
+            "a": "punojmë"
+          },
+          {
+            "q": "Ajo ___ në shtëpi.",
+            "options": [
+              "jam",
+              "është",
+              "jemi"
+            ],
+            "a": "është"
+          },
+          {
+            "q": "Ju ___ ujë.",
+            "options": [
+              "keni",
+              "ka",
+              "kam"
+            ],
+            "a": "keni"
+          }
+        ]
+      },
+      {
+        "id": "translate",
+        "type": "text",
+        "title": "7. Deutsch → Albanisch",
+        "items": [
+          "Ich möchte Kaffee trinken.",
+          "Ich brauche Medikamente."
+        ],
+        "solutions": [
+          "Dua të pi kafe.",
+          "Më duhen ilaçe."
+        ]
+      },
+      {
+        "id": "error",
+        "type": "text",
+        "title": "8. Fehler finden",
+        "items": [
+          "Ne punon sot.",
+          "Ti kam kohë.",
+          "Ju është në hotel.",
+          "Ata pi kafe."
+        ],
+        "solutions": [
+          "Ne punojmë sot.",
+          "Ti ke kohë.",
+          "Ju jeni në hotel.",
+          "Ata pinë kafe."
+        ]
+      },
+      {
+        "id": "abschluss",
+        "type": "info",
+        "title": "9. Abschluss",
+        "html": "<p><b>Selbstcheck:</b> Thema als gelernt/wiederholen/schwierig markieren und eine Notiz ergänzen.</p>"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Sitzung 6: Präsens: Verben mit Stammwechsel / schwierigen Formen I",
+    "review": "Modalverben",
+    "newTopicId": 6,
+    "tags": [
+      "A2",
+      "Präsens"
+    ],
+    "exercises": [
+      {
+        "id": "overview",
+        "type": "info",
+        "title": "1. Überblick",
+        "html": "<p>Wiederholung: <b>Modalverben</b>. Neues Thema: <b>Präsens: Verben mit Stammwechsel / schwierigen Formen I</b>.</p>"
+      },
+      {
+        "id": "grammar",
+        "type": "info",
+        "title": "2. Grammatik ausführlicher",
+        "html": "<p>Schwierige Formen I.</p><div class=\"tablewrap\"><table><thead><tr><th>Verb</th><th>unë</th><th>ti/ai/ajo</th><th>ne</th><th>ju</th><th>ata/ato</th></tr></thead><tbody><tr><td>them</td><td>them</td><td>thua/thotë</td><td>themi</td><td>thoni</td><td>thonë</td></tr><tr><td>jap</td><td>jap</td><td>jep</td><td>japim</td><td>jepni</td><td>japin</td></tr><tr><td>marr</td><td>marr</td><td>merr</td><td>marrim</td><td>merrni</td><td>marrin</td></tr><tr><td>dal</td><td>dal</td><td>del</td><td>dalim</td><td>dilni</td><td>dalin</td></tr></tbody></table></div>"
+      },
+      {
+        "id": "warmup",
+        "type": "text",
+        "title": "3. Aufwärmen",
+        "items": [
+          "Çfarë bën sot?",
+          "Ku je tani?",
+          "A ke kohë?"
+        ],
+        "solutions": [
+          "Sot punoj / mësoj.",
+          "Jam në shtëpi / në punë.",
+          "Po, kam kohë. / Jo, nuk kam kohë."
+        ]
+      },
+      {
+        "id": "cloze",
+        "type": "cloze",
+        "title": "4. Lücken gemischt",
+        "items": [
+          {
+            "q": "Unë ___ të vërtetën. (them)",
+            "a": "them"
+          },
+          {
+            "q": "Ti ___ librin. (marr)",
+            "a": "merr"
+          },
+          {
+            "q": "Ajo ___ bukë fëmijës. (jap)",
+            "a": "jep"
+          },
+          {
+            "q": "Ne ___ nga shtëpia. (dal)",
+            "a": "dalim"
+          }
+        ]
+      },
+      {
+        "id": "match",
+        "type": "match",
+        "title": "5. Direkt verbinden statt abschreiben",
+        "left": [
+          "Në mëngjes",
+          "Në qytet",
+          "Te mjeku",
+          "Në shtëpi",
+          "Nesër"
+        ],
+        "right": [
+          "pi kafe.",
+          "shkoj në treg.",
+          "më duhet ndihmë.",
+          "lexoj një libër.",
+          "vij herët."
+        ],
+        "solutions": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "id": "mcq",
+        "type": "mcq",
+        "title": "6. Multiple Choice",
+        "items": [
+          {
+            "q": "Ne ___ sot.",
+            "options": [
+              "punoj",
+              "punojmë",
+              "punojnë"
+            ],
+            "a": "punojmë"
+          },
+          {
+            "q": "Ajo ___ në shtëpi.",
+            "options": [
+              "jam",
+              "është",
+              "jemi"
+            ],
+            "a": "është"
+          },
+          {
+            "q": "Ju ___ ujë.",
+            "options": [
+              "keni",
+              "ka",
+              "kam"
+            ],
+            "a": "keni"
+          }
+        ]
+      },
+      {
+        "id": "translate",
+        "type": "text",
+        "title": "7. Deutsch → Albanisch",
+        "items": [
+          "Ich sage die Antwort.",
+          "Du nimmst das Buch."
+        ],
+        "solutions": [
+          "Unë them përgjigjen.",
+          "Ti merr librin."
+        ]
+      },
+      {
+        "id": "error",
+        "type": "text",
+        "title": "8. Fehler finden",
+        "items": [
+          "Ne punon sot.",
+          "Ti kam kohë.",
+          "Ju është në hotel.",
+          "Ata pi kafe."
+        ],
+        "solutions": [
+          "Ne punojmë sot.",
+          "Ti ke kohë.",
+          "Ju jeni në hotel.",
+          "Ata pinë kafe."
+        ]
+      },
+      {
+        "id": "abschluss",
+        "type": "info",
+        "title": "9. Abschluss",
+        "html": "<p><b>Selbstcheck:</b> Thema als gelernt/wiederholen/schwierig markieren und eine Notiz ergänzen.</p>"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Sitzung 7: Präsens: Verben mit Stammwechsel / schwierigen Formen II",
+    "review": "schwierige Formen I",
+    "newTopicId": 7,
+    "tags": [
+      "A2",
+      "Präsens"
+    ],
+    "exercises": [
+      {
+        "id": "overview",
+        "type": "info",
+        "title": "1. Überblick",
+        "html": "<p>Wiederholung: <b>schwierige Formen I</b>. Neues Thema: <b>Präsens: Verben mit Stammwechsel / schwierigen Formen II</b>.</p>"
+      },
+      {
+        "id": "grammar",
+        "type": "info",
+        "title": "2. Grammatik ausführlicher",
+        "html": "<p>Schwierige Formen II.</p><div class=\"tablewrap\"><table><thead><tr><th>Verb</th><th>unë</th><th>ti/ai/ajo</th><th>ne</th><th>ju</th><th>ata/ato</th></tr></thead><tbody><tr><td>shoh</td><td>shoh</td><td>sheh</td><td>shohim</td><td>shihni</td><td>shohin</td></tr><tr><td>vij</td><td>vij</td><td>vjen</td><td>vijmë</td><td>vini</td><td>vijnë</td></tr><tr><td>gjej</td><td>gjej</td><td>gjen</td><td>gjejmë</td><td>gjeni</td><td>gjejnë</td></tr><tr><td>bëj</td><td>bëj</td><td>bën</td><td>bëjmë</td><td>bëni</td><td>bëjnë</td></tr></tbody></table></div>"
+      },
+      {
+        "id": "warmup",
+        "type": "text",
+        "title": "3. Aufwärmen",
+        "items": [
+          "Çfarë bën sot?",
+          "Ku je tani?",
+          "A ke kohë?"
+        ],
+        "solutions": [
+          "Sot punoj / mësoj.",
+          "Jam në shtëpi / në punë.",
+          "Po, kam kohë. / Jo, nuk kam kohë."
+        ]
+      },
+      {
+        "id": "cloze",
+        "type": "cloze",
+        "title": "4. Lücken gemischt",
+        "items": [
+          {
+            "q": "Ajo ___ një mace. (shoh)",
+            "a": "sheh"
+          },
+          {
+            "q": "Ne ___ nesër. (vij)",
             "a": "vijmë"
+          },
+          {
+            "q": "Ti ___ çelësin? (gjej)",
+            "a": "gjen"
+          },
+          {
+            "q": "Ata ___ sport. (bëj)",
+            "a": "bëjnë"
+          }
+        ]
+      },
+      {
+        "id": "match",
+        "type": "match",
+        "title": "5. Direkt verbinden statt abschreiben",
+        "left": [
+          "Në mëngjes",
+          "Në qytet",
+          "Te mjeku",
+          "Në shtëpi",
+          "Nesër"
+        ],
+        "right": [
+          "pi kafe.",
+          "shkoj në treg.",
+          "më duhet ndihmë.",
+          "lexoj një libër.",
+          "vij herët."
+        ],
+        "solutions": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "id": "mcq",
+        "type": "mcq",
+        "title": "6. Multiple Choice",
+        "items": [
+          {
+            "q": "Ne ___ sot.",
+            "options": [
+              "punoj",
+              "punojmë",
+              "punojnë"
+            ],
+            "a": "punojmë"
+          },
+          {
+            "q": "Ajo ___ në shtëpi.",
+            "options": [
+              "jam",
+              "është",
+              "jemi"
+            ],
+            "a": "është"
+          },
+          {
+            "q": "Ju ___ ujë.",
+            "options": [
+              "keni",
+              "ka",
+              "kam"
+            ],
+            "a": "keni"
+          }
+        ]
+      },
+      {
+        "id": "translate",
+        "type": "text",
+        "title": "7. Deutsch → Albanisch",
+        "items": [
+          "Wir kommen morgen.",
+          "Sie machen Sport."
+        ],
+        "solutions": [
+          "Ne vijmë nesër.",
+          "Ata/Ato bëjnë sport."
+        ]
+      },
+      {
+        "id": "error",
+        "type": "text",
+        "title": "8. Fehler finden",
+        "items": [
+          "Ne punon sot.",
+          "Ti kam kohë.",
+          "Ju është në hotel.",
+          "Ata pi kafe."
+        ],
+        "solutions": [
+          "Ne punojmë sot.",
+          "Ti ke kohë.",
+          "Ju jeni në hotel.",
+          "Ata pinë kafe."
+        ]
+      },
+      {
+        "id": "abschluss",
+        "type": "info",
+        "title": "9. Abschluss",
+        "html": "<p><b>Selbstcheck:</b> Thema als gelernt/wiederholen/schwierig markieren und eine Notiz ergänzen.</p>"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Sitzung 8: Präsens-Wiederholung gemischt",
+    "review": "alle Präsensgruppen",
+    "newTopicId": 8,
+    "tags": [
+      "A2",
+      "Präsens"
+    ],
+    "exercises": [
+      {
+        "id": "overview",
+        "type": "info",
+        "title": "1. Überblick",
+        "html": "<p>Wiederholung: <b>alle Präsensgruppen</b>. Neues Thema: <b>Präsens-Wiederholung gemischt</b>.</p>"
+      },
+      {
+        "id": "grammar",
+        "type": "info",
+        "title": "2. Grammatik ausführlicher",
+        "html": "<p>Gemischte Wiederholung.</p><div class=\"tablewrap\"><table><thead><tr><th>Gruppe</th><th>Beispiele</th><th>Achte auf</th></tr></thead><tbody><tr><td>regelmäßig</td><td>punoj, mësoj, lexoj</td><td>punojmë, mësoni, lexojnë</td></tr><tr><td>einsilbig</td><td>ha, pi, di</td><td>hamë, pini, dinë</td></tr><tr><td>schwierig</td><td>vij, bëj, shoh</td><td>vjen, bëjmë, shihni</td></tr></tbody></table></div>"
+      },
+      {
+        "id": "warmup",
+        "type": "text",
+        "title": "3. Aufwärmen",
+        "items": [
+          "Çfarë bën sot?",
+          "Ku je tani?",
+          "A ke kohë?"
+        ],
+        "solutions": [
+          "Sot punoj / mësoj.",
+          "Jam në shtëpi / në punë.",
+          "Po, kam kohë. / Jo, nuk kam kohë."
+        ]
+      },
+      {
+        "id": "cloze",
+        "type": "cloze",
+        "title": "4. Lücken gemischt",
+        "items": [
+          {
+            "q": "Ne ___ në qytet. (vij)",
+            "a": "vijmë"
+          },
+          {
+            "q": "Ata ___ shqip. (mësoj)",
+            "a": "mësojnë"
           },
           {
             "q": "Ju ___ bukë. (ha)",
             "a": "hani"
           },
           {
-            "q": "Ata ___ kafe. (pi)",
-            "a": "pinë"
-          },
-          {
-            "q": "Unë ___ shqip. (di)",
-            "a": "di"
-          },
-          {
-            "q": "Ne ___ të mësojmë. (dua)",
-            "a": "duam"
+            "q": "Ajo ___ një libër. (marr)",
+            "a": "merr"
           }
         ]
       },
       {
-        "id": "c",
-        "type": "text",
-        "title": "5. Deutsch → Albanisch",
-        "items": [
-          "Ich bin zu Hause.",
-          "Wir gehen morgen.",
-          "Du hast Wasser.",
-          "Sie kommen heute.",
-          "Ich trinke Kaffee.",
-          "Wir wollen Albanisch lernen."
+        "id": "match",
+        "type": "match",
+        "title": "5. Direkt verbinden statt abschreiben",
+        "left": [
+          "Në mëngjes",
+          "Në qytet",
+          "Te mjeku",
+          "Në shtëpi",
+          "Nesër"
+        ],
+        "right": [
+          "pi kafe.",
+          "shkoj në treg.",
+          "më duhet ndihmë.",
+          "lexoj një libër.",
+          "vij herët."
         ],
         "solutions": [
-          "Unë jam në shtëpi.",
-          "Ne shkojmë nesër.",
-          "Ti ke ujë.",
-          "Ata/Ato vijnë sot.",
-          "Unë pi kafe.",
-          "Ne duam të mësojmë shqip."
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
         ]
       },
       {
-        "id": "d",
-        "type": "text",
-        "title": "6. Fehler korrigieren",
+        "id": "mcq",
+        "type": "mcq",
+        "title": "6. Multiple Choice",
         "items": [
-          "Unë është në shtëpi.",
-          "Ti kam ujë.",
-          "Ne shkon sot.",
-          "Ju vijmë nesër.",
+          {
+            "q": "Ne ___ sot.",
+            "options": [
+              "punoj",
+              "punojmë",
+              "punojnë"
+            ],
+            "a": "punojmë"
+          },
+          {
+            "q": "Ajo ___ në shtëpi.",
+            "options": [
+              "jam",
+              "është",
+              "jemi"
+            ],
+            "a": "është"
+          },
+          {
+            "q": "Ju ___ ujë.",
+            "options": [
+              "keni",
+              "ka",
+              "kam"
+            ],
+            "a": "keni"
+          }
+        ]
+      },
+      {
+        "id": "translate",
+        "type": "text",
+        "title": "7. Deutsch → Albanisch",
+        "items": [
+          "Wir arbeiten heute.",
+          "Sie trinken coffee."
+        ],
+        "solutions": [
+          "Ne punojmë sot.",
+          "Ata/Ato pinë kafe."
+        ]
+      },
+      {
+        "id": "error",
+        "type": "text",
+        "title": "8. Fehler finden",
+        "items": [
+          "Ne punon sot.",
+          "Ti kam kohë.",
+          "Ju është në hotel.",
           "Ata pi kafe."
         ],
         "solutions": [
-          "Unë jam në shtëpi.",
-          "Ti ke ujë.",
-          "Ne shkojmë sot.",
-          "Ju vini nesër.",
+          "Ne punojmë sot.",
+          "Ti ke kohë.",
+          "Ju jeni në hotel.",
           "Ata pinë kafe."
-        ]
-      },
-      {
-        "id": "e",
-        "type": "match",
-        "title": "7. Kombinieren",
-        "left": [
-          "Unë jam",
-          "Ti ke",
-          "Ne shkojmë",
-          "Ju vini",
-          "Ata pinë"
-        ],
-        "right": [
-          "në shtëpi.",
-          "ujë.",
-          "në qytet.",
-          "nesër.",
-          "kafe."
-        ],
-        "solutions": [
-          "Unë jam në shtëpi.",
-          "Ti ke ujë.",
-          "Ne shkojmë në qytet.",
-          "Ju vini nesër.",
-          "Ata pinë kafe."
-        ]
-      },
-      {
-        "id": "f",
-        "type": "dialog",
-        "title": "8. Mini-Dialog: Besuch",
-        "lines": [
-          "A: Mirëdita! A je në shtëpi?",
-          "Ti: ___",
-          "A: A ke kafe?",
-          "Ti: ___",
-          "A: Ku shkojmë sot?",
-          "Ti: ___",
-          "A: A vjen nesër?",
-          "Ti: ___"
-        ],
-        "solutions": [
-          "Po, jam në shtëpi.",
-          "Po, kam kafe.",
-          "Shkojmë në qytet.",
-          "Po, vij nesër."
         ]
       },
       {
         "id": "abschluss",
         "type": "info",
         "title": "9. Abschluss",
-        "html": "<p><b>Merke:</b> Diese Verben musst du häufig wiederholen. Sie sind sehr nützlich im Alltag.</p><p><b>Hausaufgabe:</b> Schreibe 4 Sätze mit jam/kam und 4 Sätze mit shkoj/vij.</p>"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Sitzung 3: Einfacher Hauptsatz",
-    "review": "Unregelmäßige Verben im Präsens",
-    "newTopicId": 3,
-    "tags": [
-      "Satzbau",
-      "Verneinung",
-      "Fragen"
-    ],
-    "vocab": [
-      "unë",
-      "ti",
-      "ai",
-      "ajo",
-      "ne",
-      "ju",
-      "nuk",
-      "a",
-      "sot",
-      "nesër",
-      "punoj",
-      "shkoj",
-      "vij",
-      "kam",
-      "jam",
-      "mësoj",
-      "dyqan",
-      "shtëpi",
-      "qytet",
-      "punë"
-    ],
-    "exercises": [
-      {
-        "id": "overview",
-        "type": "info",
-        "title": "1. Überblick",
-        "html": "<p><b>Neu:</b> einfacher Hauptsatz: Aussage, Frage und Verneinung. Beispiel: <b>Unë nuk shkoj sot.</b></p>"
-      },
-      {
-        "id": "grammar",
-        "type": "info",
-        "title": "2. Grammatik kurz",
-        "html": "<ul><li>Aussage: Unë shkoj në punë.</li><li>Verneinung: Unë <b>nuk</b> shkoj në punë.</li><li>Ja/Nein-Frage: <b>A</b> shkon ti në punë?</li><li>Fragewort: Ku shkon ti?</li></ul>"
-      },
-      {
-        "id": "warmup",
-        "type": "text",
-        "title": "3. Aufwärmen",
-        "items": [
-          "A shkon sot në punë?",
-          "Ku je tani?",
-          "A ke kohë?",
-          "Çfarë mëson?",
-          "A vjen nesër?"
-        ],
-        "solutions": [
-          "Po/Jo ...",
-          "Jam në ...",
-          "Po, kam kohë. / Jo, nuk kam kohë.",
-          "Mësoj shqip.",
-          "Po, vij nesër. / Jo, nuk vij nesër."
-        ]
-      },
-      {
-        "id": "b",
-        "type": "cloze",
-        "title": "4. Lücken: nuk oder a oder Verbform",
-        "items": [
-          {
-            "q": "Unë ___ shkoj sot. (nicht)",
-            "a": "nuk"
-          },
-          {
-            "q": "___ punon ti nesër? (Fragepartikel)",
-            "a": "A"
-          },
-          {
-            "q": "Ne ___ në qytet. (shkoj)",
-            "a": "shkojmë"
-          },
-          {
-            "q": "Ti ___ ke kohë. (nicht)",
-            "a": "nuk"
-          },
-          {
-            "q": "___ vjen ajo sot?",
-            "a": "A"
-          },
-          {
-            "q": "Ata ___ punojnë nesër. (nicht)",
-            "a": "nuk"
-          }
-        ]
-      },
-      {
-        "id": "c",
-        "type": "text",
-        "title": "5. Aussage → Frage / negativ",
-        "items": [
-          "Unë shkoj në dyqan. → Frage",
-          "Ti ke kohë. → negativ",
-          "Ne punojmë sot. → Frage",
-          "Ajo vjen nesër. → negativ",
-          "Ju mësoni shqip. → Frage"
-        ],
-        "solutions": [
-          "A shkoj unë në dyqan?",
-          "Ti nuk ke kohë.",
-          "A punojmë ne sot?",
-          "Ajo nuk vjen nesër.",
-          "A mësoni ju shqip?"
-        ]
-      },
-      {
-        "id": "d",
-        "type": "text",
-        "title": "6. Deutsch → Albanisch",
-        "items": [
-          "Ich gehe heute nicht.",
-          "Gehst du morgen zur Arbeit?",
-          "Wir sind zu Hause.",
-          "Sie kommen nicht.",
-          "Lernst du Albanisch?"
-        ],
-        "solutions": [
-          "Unë nuk shkoj sot.",
-          "A shkon ti nesër në punë?",
-          "Ne jemi në shtëpi.",
-          "Ata/Ato nuk vijnë.",
-          "A mëson ti shqip?"
-        ]
-      },
-      {
-        "id": "e",
-        "type": "text",
-        "title": "7. Fehler korrigieren",
-        "items": [
-          "Unë shkoj nuk sot.",
-          "Ti a punon?",
-          "Ne nuk jemi në shtëpi.",
-          "Ajo nuk vjen nesër.",
-          "A ju mësoni shqip?"
-        ],
-        "solutions": [
-          "Unë nuk shkoj sot.",
-          "A punon ti?",
-          "Ne nuk jemi në shtëpi.",
-          "Ajo nuk vjen nesër.",
-          "A mësoni ju shqip?"
-        ]
-      },
-      {
-        "id": "f",
-        "type": "dialog",
-        "title": "8. Mini-Dialog: Weg zum Laden",
-        "lines": [
-          "A: A shkon në dyqan sot?",
-          "Ti: ___",
-          "A: Ku është dyqani?",
-          "Ti: ___",
-          "A: A ke para?",
-          "Ti: ___",
-          "A: A vjen edhe unë?",
-          "Ti: ___"
-        ],
-        "solutions": [
-          "Po, shkoj në dyqan sot.",
-          "Dyqani është këtu/atje.",
-          "Po, kam para. / Jo, nuk kam para.",
-          "Po, eja. / Jo, nuk vjen."
-        ]
-      },
-      {
-        "id": "abschluss",
-        "type": "info",
-        "title": "9. Abschluss",
-        "html": "<p><b>Merke:</b> <b>nuk</b> steht normalerweise vor dem Verb. <b>A</b> macht aus einer Aussage oft eine Ja/Nein-Frage.</p><p><b>Hausaufgabe:</b> Schreibe 5 Aussagen, mache daraus 5 Fragen und 5 negative Sätze.</p>"
+        "html": "<p><b>Selbstcheck:</b> Thema als gelernt/wiederholen/schwierig markieren und eine Notiz ergänzen.</p>"
       }
     ]
   }
